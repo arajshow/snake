@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <style>
+        body{
+            margin: 10px 100px;
+            /* padding: 100px; */
+        }
+        #mycanvas{
+            background-image: url(asserts/grass.jpg);
+            border: 15px solid green;
+            height: 483px;
+            width: 548px;
+            display: inline-block;
+        }
+        h1{
+            padding: 20px;
+            /* display: inline-block; */
+        }
+        #start{
+            font-size: 40px;
+            padding: 25px;
+            font-weight: bold;
+            font-family: Helvetica, sans-serif;
+            color: rgb(49, 4, 49);
+        }
+        p{
+            text-align: justify;
+        }
+        #btn{
+            margin-top: 25px;
+            padding: 5px 15px ;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="start" > Press any Key to Start</h1>
+
+    <table>
+        <tr>
+            <th>
+                <canvas id="mycanvas" width="1000px" height="1000px"></canvas>
+            </th>
+            <th>
+                <h1 id="tital"></h1>
+                <h1>
+                    Score <span id="score">0</span>
+                </h1>
+                <h1>
+                    <div style=" display : inline-block"; >
+                        <input type="checkbox" id="border" name="scales" checked>
+                        <label for="border">Border</label>
+                    </div>
+                </h1>               
+            </th>
+            <th>
+                <h1> </h1>
+            </th>
+            <th>
+                <h2>Cantrols :</h2>
+                <p>
+                    <h3> a , ArrowLeft :- to turn left <br></h3>
+                    <h3> d , ArrowRight :- to turn right <br></h3>
+                    <h3> w , ArrowUp :- to move top<br> </h3>
+                    <h3> s , ArrowDown :- to move down <br></h3>
+                </p>
+            </th>
+        </tr>
+
+
+
+    </table>
+
+
+    
+
+    
+    <script src="snake.js"></script>
+    
+</body>
+</html>
